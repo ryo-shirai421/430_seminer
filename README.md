@@ -16,6 +16,6 @@ poetry config virtualenvs.in-project true
 cd 430_seminer
 #パッケージのインストール
 poetry install
-#仮想環境
+#仮想環境に移動
 poetry shell
 ```

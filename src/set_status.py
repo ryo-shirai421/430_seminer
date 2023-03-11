@@ -24,9 +24,6 @@ def change_status(current_time, past_time, past_status, sensor_values):
                 current_status = 2
 
     # ここから先は編集しない
-    if (current_status != past_status):
-        change_time = current_time
-    else:
-        change_time = past_time
+    change_time = current_time if current_status != past_status else past_time
 
     return current_status, change_time

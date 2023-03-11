@@ -10,7 +10,7 @@ from matplotlib import pyplot as plt
 import matplotlib.patches as patches
 from matplotlib import animation
 import japanize_matplotlib
-from set_status import change_status
+from get_status import get_status
 
 
 status_arr = [0]
@@ -70,7 +70,7 @@ def _update(frame):
     # 座席の状態
     dt_now = datetime.datetime.now()
 
-    new_status, changed_time = change_status(
+    new_status, changed_time = get_status(
         dt_now, dt_past[-1], status_arr[-1], temp[0])
     status_arr.append(new_status)
     dt_past.append(changed_time)

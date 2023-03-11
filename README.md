@@ -4,7 +4,7 @@
 ```
 git clone git@github.com:ryo-shirai421/430_seminer.git
 ```
-2. 仮想環境に入る
+2. 仮想環境
 ```
 cd 430_seminer
 poetry install

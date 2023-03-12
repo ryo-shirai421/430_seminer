@@ -7,15 +7,15 @@ def get_status(current_time, past_time, past_status, sensor_values):
 
     引数
     ----------
-    current_time    : 現在時刻
-    past_time       : 前のステータスに変化した時の時刻
-    past_status     : 前のステータス
-    sensor_value    : センサの値 (1x8) の配列
+    current_time       : 現在時刻
+    past_time          : 前のステータスに変化した時の時刻
+    past_status        : 前のステータス
+    sensor_value       : センサの値 (1x8) の配列
 
     返り値
     -------
-    current_status  : 現在時刻のステータス
-    change_time     : ステータスが変化した時間
+    current_status     : 現在時刻のステータス
+    state_changed_time : ステータスが変化した時間
     """
 
     # ------------------------------- ここから -----------------------------------
@@ -37,6 +37,6 @@ def get_status(current_time, past_time, past_status, sensor_values):
     # ------------------------------- ここまで -----------------------------------
 
     # 状態が変わったら，その時刻を保存しておく．
-    change_time = current_time if current_status != past_status else past_time
+    state_changed_time = current_time if current_status != past_status else past_time
 
-    return current_status, change_time
+    return current_status, state_changed_time

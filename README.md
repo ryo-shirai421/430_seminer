@@ -8,8 +8,6 @@
 ```
 # 作業ディレクトリに移動
 cd 430_seminer
-# Pythonのバージョン設定
-pyenv local 3.10.0
 # パッケージのインストール
 poetry install
 # 仮想環境に移動

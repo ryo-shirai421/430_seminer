@@ -1,5 +1,3 @@
 {
-    "python.autoComplete.extraPaths": [
-        "${workspaceFolder}\\.venv\\lib\\site-packages"
-    ]
+    
 }

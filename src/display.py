@@ -1,17 +1,11 @@
-import itertools
-import math
 import datetime
 
-import seaborn as sns
-import csv
-
 import numpy as np
-from matplotlib import pyplot as plt
-import matplotlib.patches as patches
+import seaborn as sns
 from matplotlib import animation
-import japanize_matplotlib
-from get_status import get_status
+from matplotlib import pyplot as plt
 
+from get_status import get_status
 
 status_arr = [0]
 dt_past = []

@@ -1,8 +1,8 @@
 # 4月30日 高校生プログラミング体験
 ## 環境構築
-### Pyenv & Poetryのインストール
-- (参考)　https://zenn.dev/kumamoto/articles/9f0b520020bdd0
-- python version: 3.10.0
+### Pyenv & Poetry のインストール
+- Python version: 3.10.0
+- (参考) https://zenn.dev/kumamoto/articles/9f0b520020bdd0
 
 ### 作業環境の構築
 ```

@@ -40,4 +40,4 @@ python src/display.py
 - 機械学習モデルの訓練と保存を行う．
 ## リンク
 - [温度センサデータシート](https://omronfs.omron.com/ja_JP/ecb/products/pdf/d6t_new.pdf)
-- [初期設定ファイル](https://docs.google.com/document/d/1fm1A4y2_XXyt_r_MGgmAdpNswXAutFpxiaugDuM-L6w/edit?usp=sharing)
+- [温度センサセットアップガイド](https://docs.google.com/document/d/1fm1A4y2_XXyt_r_MGgmAdpNswXAutFpxiaugDuM-L6w/edit?usp=sharing)

@@ -4,3 +4,4 @@ numpy
 seaborn
 black
 flake8
+pickle

@@ -1,4 +1,15 @@
 {
     "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.lintOnSave": true,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "python.formatting.blackArgs": [
+        "--line-length=114"
+    ],
+    "python.formatting.blackPath": "black",
+    "flake8.args": [
+        "--line-length=114"
+    ]
 }

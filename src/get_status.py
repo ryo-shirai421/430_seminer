@@ -23,12 +23,12 @@ def get_status(current_time, past_time, past_status, sensor_values):
         current_status = 1
 
     else:
-        if (past_status == 0):
+        if past_status == 0:
             current_status = 0
-        elif (past_status == 1):
+        elif past_status == 1:
             current_status = 2
         else:
-            if (current_time - datetime.timedelta(minutes=1) >= past_time):
+            if current_time - datetime.timedelta(minutes=1) >= past_time:
                 current_status = 0
             else:
                 current_status = 2

@@ -2,6 +2,7 @@ import datetime
 
 
 def get_status(current_time, past_time, past_status, sensor_values):
+
     """
     センサーの値と過去の情報から，現在の状態を決める関数
 

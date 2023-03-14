@@ -128,6 +128,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.idea/
 .python-version
 
 # Spyder project settings
@@ -170,5 +171,5 @@ poetry.toml
 
 # LSP config files
 pyrightconfig.json
-.idea
+
 # End of https://www.toptal.com/developers/gitignore/api/python

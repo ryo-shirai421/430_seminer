@@ -4,8 +4,8 @@
 cd 430_semener
 # 仮想環境作成
 python -m venv .venv
-# 仮想環境の有効化
-. .venv/Scripts/activate
+# 仮想環境の有効化（bashの場合）
+source .venv/Scripts/activate
 # パッケージのインストール
 pip install -r requirements.txt
 ```
@@ -33,10 +33,12 @@ python src/display.py
 - 体験者に判定するコードを書いてもらう（ある程度サンプルコードを与えておく）.
 ### src/sandbox.ipynb
 - 体験者が適当にコードを試す場所
-### src/model.py
+### src/train_model.py
 - 機械学習モデルの訓練と保存を行う．
 ### data/
 - 訓練データ
+### params/
+- 学習済みのモデルを保存
 ## リンク
 - [温度センサデータシート](https://omronfs.omron.com/ja_JP/ecb/products/pdf/d6t_new.pdf)
 - [温度センサセットアップガイド](https://docs.google.com/document/d/1fm1A4y2_XXyt_r_MGgmAdpNswXAutFpxiaugDuM-L6w/edit?usp=sharing)

@@ -35,7 +35,8 @@ def get_status(current_time, past_time, past_status, sensor_values):
                 current_status = 2
 
     # ------------------------------- ここまで -----------------------------------
-
+    # knn = pickle.load(open("regmodel.pkl", "rb"))
+    # current_status = knn.predict(sensor_values)
     # 状態が変わったら，その時刻を保存しておく．
     state_changed_time = current_time if current_status != past_status else past_time
 

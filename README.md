@@ -8,6 +8,10 @@ python -m venv .venv
 # パッケージのインストール
 pip install -r requirements.txt
 ```
+### 拡張機能
+- isort
+- flake8
+- japanese language
 ## 実行
 
 ```

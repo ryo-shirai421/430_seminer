@@ -1,6 +1,10 @@
 # 4月30日 高校生プログラミング体験
 ## 環境構築
 ```
+# 仮想環境作成
+python -m venv .venv
+# 仮想環境の有効化
+. .venv/Scripts/activate
 # パッケージのインストール
 pip install -r requirements.txt
 ```

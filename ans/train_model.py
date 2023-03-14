@@ -7,7 +7,7 @@ from sklearn import tree
 from sklearn.neighbors import KNeighborsClassifier
 
 
-def main():
+def train_model():
     parent = Path(__file__).resolve().parents[1]
     # 訓練データの読み込み
     X = pd.read_csv(parent.joinpath("data", "train_data.csv"), header=None).values
@@ -24,4 +24,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    train_model()

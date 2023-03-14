@@ -27,7 +27,7 @@ def get_status(current_time, past_time, past_status, sensor_values):
     current_status = 1
 
     # ----------------------------- ここまでに書く --------------------------------
-
+    # 状態が変わったら，その時刻を保存しておく．
     state_changed_time = current_time if current_status != past_status else past_time
 
     return current_status, state_changed_time

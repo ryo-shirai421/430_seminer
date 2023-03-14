@@ -20,7 +20,7 @@ def main():
     model.fit(X, y)
     # 学習済みのモデルを保存
     pickle.dump(model, open(parent.joinpath("params", "knn_model.pkl"), "wb"))
-    # pickle.dump(model, open("../params/tree_model.pkl", "wb"))
+    # pickle.dump(model, open(parent.joinpath("params", "tree_model.pkl"), "wb"))
 
 
 if __name__ == "__main__":

@@ -13,8 +13,7 @@ pip install -r requirements.txt
 ## 実行
 
 ```
-cd src
-python display.py
+python src/display.py
 ```
 
 ## ファイル説明

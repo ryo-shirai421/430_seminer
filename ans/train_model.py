@@ -1,10 +1,10 @@
 import pickle
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn import tree
-from pathlib import Path
+from sklearn.neighbors import KNeighborsClassifier
 
 
 def main():

@@ -1,11 +1,12 @@
-import numpy as np
+import datetime
+import pickle
+
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
-import pickle
 
 
 def get_status(current_time, past_time, past_status, sensor_values):
-    knn = pickle.load(open('regmodel.pkl', 'rb'))
+    knn = pickle.load(open("regmodel.pkl", "rb"))
     """
     センサーの値と過去の情報から，現在の状態を決める関数
 
@@ -24,7 +25,6 @@ def get_status(current_time, past_time, past_status, sensor_values):
     # ------------------------------- ここから -----------------------------------
     current_status = knn.predict(sensor_values)
     if current_status == 0:
-
         if past_status == 0:
             current_status = 0
         elif past_status == 1:
@@ -42,15 +42,18 @@ def get_status(current_time, past_time, past_status, sensor_values):
 
     return current_status, state_changed_time
 
+
 def train_model():
-    x_train = pd.read_csv('../data/train_data.csv')
-    y_train = pd.read_csv('../data/train_data.csv')
+    x_train = pd.read_csv("../data/train_data.csv")
+    y_train = pd.read_csv("../data/train_data.csv")
     knn = KNeighborsClassifier(n_neighbors=2)
     knn.fit(x_train, y_train)
-    pickle.dump(knn, open('../params/knn_model.pkl', 'wb'))
+    pickle.dump(knn, open("../params/knn_model.pkl", "wb"))
 
 
 def main():
     train_model()
+
+
 if __name__ == "__main__":
     main()

@@ -4,4 +4,5 @@ numpy
 seaborn
 black
 flake8
-pickle
+isort
+scikit-learn

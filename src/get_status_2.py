@@ -21,7 +21,7 @@ def get_status(current_time, past_time, past_status, sensor_values):
     # Step3: 過去の状態を利用して一時離席を判断できるようにしよう．
     # Advance1: 在席と離席の判断を機械学習モデルにやらせてみよう．
     # Advance2: 決定木モデルで予測してみよう．
-    # Advance2: 決定木がどのように判断しているかを見てみよう．
+    # Advance3: 決定木がどのように判断しているかを見てみよう．(sandbox.ipynbで行う)
 
     # ------------------------------- ここから -----------------------------------
     current_status = 1

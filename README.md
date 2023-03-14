@@ -1,6 +1,7 @@
 # 4月30日 高校生プログラミング体験
 ## 環境構築
 ```
+cd 430_semener
 # 仮想環境作成
 python -m venv .venv
 # 仮想環境の有効化
@@ -8,10 +9,7 @@ python -m venv .venv
 # パッケージのインストール
 pip install -r requirements.txt
 ```
-## 拡張機能
-- isort
-- flake8
-- japanese language
+
 ## 実行
 
 ```

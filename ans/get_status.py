@@ -17,13 +17,13 @@ def get_status(current_time, past_time, past_status, sensor_values):
     current_status     : 現在時刻のステータス
     state_changed_time : ステータスが変化した時間
     """
-
-    # ------------------------------- ここから -----------------------------------
-
+    current_status = 0
     if any(value >= 30 for value in sensor_values):
         current_status = 1
+    # model = pickle.load(open("../params/knn_model.pkl", "rb"))
+    # current_status = knn.predict(sensor_values)
 
-    else:
+    if current_status != 1:
         if past_status == 0:
             current_status = 0
         elif past_status == 1:
@@ -34,10 +34,6 @@ def get_status(current_time, past_time, past_status, sensor_values):
             else:
                 current_status = 2
 
-    # ------------------------------- ここまで -----------------------------------
-    # knn = pickle.load(open("regmodel.pkl", "rb"))
-    # current_status = knn.predict(sensor_values)
-    # current_status = knn.predict(sensor_values)
     # 状態が変わったら，その時刻を保存しておく．
     state_changed_time = current_time if current_status != past_status else past_time
 

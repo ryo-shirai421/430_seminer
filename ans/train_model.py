@@ -13,10 +13,12 @@ def main():
     y = np.ravel(pd.read_csv("../data/train_label.csv", header=None).values)
     # モデルの読み込み
     model = KNeighborsClassifier(n_neighbors=2)
+    #model = tree.DecisionTreeClassifier()
     # モデルの学習
     model.fit(X, y)
     # 学習済みのモデルを保存
     pickle.dump(model, open("../params/knn_model.pkl", "wb"))
+    #pickle.dump(model, open("../params/tree_model.pkl", "wb"))
 
 
 if __name__ == "__main__":

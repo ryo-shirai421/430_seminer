@@ -31,3 +31,17 @@ def get_status(current_time, past_time, past_status, sensor_values):
     state_changed_time = current_time if current_status != past_status else past_time
 
     return current_status, state_changed_time
+
+
+if __name__ == "__main__":
+    # 引数の定義（具体値を入れてみる）
+    past_time = datetime.datetime(year=2023, month=4, day=30, hour=12, minute=15, second=15)
+    current_time = datetime.datetime(year=2023, month=4, day=30, hour=12, minute=15, second=25)
+    past_status = 3
+    sensor_values = [23, 24, 25, 26, 27, 28, 29, 30]
+    # 関数の呼び出し
+    current_status, state_changed_time = get_status(current_time, past_time, past_status, sensor_values)
+
+    # 結果の確認
+    print("過去の状態：{} --> 現在の状態：{}".format(past_status, current_status))
+    print("状態が変化した時間：{}".format(state_changed_time))

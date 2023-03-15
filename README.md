@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ssh <ユーザ名>@raspberrypi.local
 # 温度センサの接続確認
 i2cdetect -y 1
-# 実行
+# 実行(2回/s毎に取得されるセンサデータをcsvファイルに追記するコード)
 python test.py
 ```
 ## 実行

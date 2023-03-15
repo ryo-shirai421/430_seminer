@@ -9,7 +9,7 @@ source .venv/Scripts/activate
 # パッケージのインストール
 pip install -r requirements.txt
 ```
-## 準備
+## 準備（ラズベリーパイ側）
 ```
 # ラズベリーパイにssh接続
 ssh <ユーザ名>@raspberrypi.local

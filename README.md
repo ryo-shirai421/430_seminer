@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 ## 準備（ラズパイ側）
 ```
-# ラズベリーパイにssh接続
+# ラズパイにssh接続
 ssh <ユーザ名>@raspberrypi.local
 # 温度センサの接続確認
 i2cdetect -y 1

@@ -1,7 +1,7 @@
 # 4月30日 高校生プログラミング体験
 ## 環境構築
 ```
-cd 430_semener
+cd 430_seminer
 # 仮想環境作成
 python -m venv .venv
 # 仮想環境の有効化（bashの場合）

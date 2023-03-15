@@ -9,7 +9,15 @@ source .venv/Scripts/activate
 # パッケージのインストール
 pip install -r requirements.txt
 ```
-
+## 準備
+```
+# ラズベリーパイにssh接続
+ssh <ユーザ名>@raspberrypi.local
+# 温度センサの接続確認
+i2cdetect -y 1
+# 実行
+python test.py
+```
 ## 実行
 
 ```

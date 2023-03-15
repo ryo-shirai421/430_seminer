@@ -1,8 +1,0 @@
-japanize_matplotlib
-matplotlib
-numpy
-seaborn
-black
-flake8
-isort
-scikit-learn

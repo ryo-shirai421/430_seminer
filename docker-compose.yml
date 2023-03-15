@@ -1,0 +1,10 @@
+version: "3"
+services:
+  python3:
+    restart: always
+    build: .
+    container_name: "430_seminer"
+    working_dir: "/root/430_seminer"
+    tty: true
+    volumes:
+      - ./:/root/430_seminer

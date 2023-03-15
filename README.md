@@ -17,6 +17,7 @@ ssh <ユーザ名>@raspberrypi.local
 i2cdetect -y 1
 # 実行（2s毎に取得されるセンサデータをcsvファイルに追記するコード）
 python test.py
+# エクスプローラーからラズパイにアクセス
 ```
 ## 実行
 

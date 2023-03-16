@@ -1,7 +1,7 @@
 # 4月30日 高校生プログラミング体験
 ## 環境構築
-1. docker のインストール
-2. vs code で拡張機能 Dev Containers, Remote - SSH をインストール
+1. dockerのインストール
+2. vs codeで拡張機能 Dev Containers, Remote - SSH をインストール
 3. リモートウィンドウを開く → Reopen in container
 ## 準備（ラズパイ側）
 ```

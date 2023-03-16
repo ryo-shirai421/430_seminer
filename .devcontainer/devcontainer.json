@@ -1,0 +1,19 @@
+{
+	"name": "430_seminer",
+	"dockerFile": "Dockerfile",
+	// ここで指定した拡張機能はcontainer内で実行するVSCodeでインストールされます。
+	// build時に他の拡張機能をインストールしておきたい場合は、
+	// その拡張機能のIdentifierをここに追記してください。
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.isort",
+				"ms-python.flake8",
+				"MS-CEINTL.vscode-language-pack-ja",
+				"ms-python.python",
+				"donjayamanne.python-extension-pack",
+				"vscode-icons-team.vscode-icons"
+			]
+		}
+	}
+}

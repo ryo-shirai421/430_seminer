@@ -1,14 +1,8 @@
 # 4月30日 高校生プログラミング体験
 ## 環境構築
-```
-cd 430_seminer
-# 仮想環境作成
-python -m venv .venv
-# 仮想環境の有効化（bashの場合）
-source .venv/Scripts/activate
-# パッケージのインストール
-pip install -r requirements.txt
-```
+1. docker のインストール
+2. vs code で拡張機能 Dev Containers, Remote - SSH をインストール
+3. リモートウィンドウを開く → Reopen in container
 ## 準備（ラズパイ側）
 ```
 # ラズパイにssh接続

@@ -1,9 +1,0 @@
-{
-    "recommendations": [
-        "ms-ceintl.vscode-language-pack-ja",
-        "vscode-icons-team.vscode-icons",
-        "ms-python.flake8",
-        "ms-python.isort",
-        "ms-toolsai.vscode-jupyter-cell-tags"
-    ]
-}

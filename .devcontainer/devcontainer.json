@@ -1,10 +1,10 @@
 {
 	"name": "430_seminer",
-	"dockerFile": "Dockerfile",
-	// ここで指定した拡張機能はcontainer内で実行するVSCodeでインストールされます。
-	// build時に他の拡張機能をインストールしておきたい場合は、
-	// その拡張機能のIdentifierをここに追記してください。
-	"customizations": {
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "python3", 
+	"workspaceFolder": "/root/430_seminer",
+    "shutdownAction": "stopCompose",
+    "customizations": {
 		"vscode": {
 			"extensions": [
 				"ms-python.isort",

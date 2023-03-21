@@ -19,7 +19,7 @@ def get_status(current_time, past_time, past_status, sensor_values):
     current_status = 0
     if any(value >= 30 for value in sensor_values):
         current_status = 1
-    # model = pickle.load(open("../params/knn_model.pkl", "rb"))
+    # model = pickle.load(open("../models/knn_model.pkl", "rb"))
     # current_status = knn.predict(sensor_values)
 
     if current_status != 1:

@@ -47,7 +47,7 @@ python src/display.py
   - 機械学習モデルの訓練と保存を行う．
 ### data/
 - 訓練用データを格納
-### params/
+### models/
 - 学習済みのモデルを格納
 ### ans/
 - 演習の解答例

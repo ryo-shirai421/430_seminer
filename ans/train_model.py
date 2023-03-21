@@ -21,7 +21,7 @@ def train_model(model_name="knn"):
     # モデルの学習
     model.fit(X, y)
     # 学習済みのモデルを保存
-    pickle.dump(model, open(parent_dir.joinpath("params", "{}_model.pkl".format(model_name)), "wb"))
+    pickle.dump(model, open(parent_dir.joinpath("models", "{}_model.pkl".format(model_name)), "wb"))
 
 
 if __name__ == "__main__":

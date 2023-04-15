@@ -85,7 +85,7 @@ def _update(frame):
     # 座席の状態
     dt_now = datetime.datetime.now()
 
-    new_status, changed_time = get_status(dt_now, dt_past[-1], status_arr[-1], temp[0])
+    new_status, changed_time = get_status(dt_now, dt_past[-1], status_arr[-1], temp[0].tolist())
     status_arr.append(new_status)
     dt_past.append(changed_time)
     status_arr.pop(0)

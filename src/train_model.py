@@ -13,9 +13,11 @@ MODELS = {"tree": tree.DecisionTreeClassifier(), "knn": KNeighborsClassifier(n_n
 def train_model(model_name="knn"):
     parent_dir = Path(__file__).resolve().parents[1]
     # 訓練データの読み込み
-    X = pd.read_csv(parent_dir.joinpath("data", "train_data.csv"), header=None).values
-    # 正解ラベルの読み込み
-    y = np.ravel(pd.read_csv(parent_dir.joinpath("data", "train_label.csv"), header=None).values)
+    zeros = pd.read_csv(parent_dir.joinpath("data", "away.csv"), header=None).values
+    ones = pd.read_csv(parent_dir.joinpath("data", "active.csv"), header=None).values
+    X = np.concatenate([zeros, ones])
+    # 正解ラベルの作成
+    y = np.array([0]*len(zeros) + [1]*len(ones))
     # モデルの読み込み
     model = MODELS[model_name]
     # モデルの学習

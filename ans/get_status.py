@@ -10,7 +10,7 @@ def get_status(current_time, past_time, past_status, sensor_values):
     current_time       : 現在時刻
     past_time          : 前のステータスに変化した時の時刻
     past_status        : 前のステータス
-    sensor_value       : センサの値 (1x8) の配列
+    sensor_values       : センサの値 (1x8) の配列
     返り値
     -------
     current_status     : 現在時刻のステータス

@@ -1,4 +1,5 @@
 import datetime
+import pickle
 
 
 def get_status(current_time, past_time, past_status, sensor_values):
@@ -16,12 +17,16 @@ def get_status(current_time, past_time, past_status, sensor_values):
     current_status     : 現在時刻のステータス
     state_changed_time : ステータスが変化した時間
     """
+    # Step1: 現在のステータスが変わらない事を確認しよう．
     current_status = 0
+    # Step2: 温度が上がると在席，下がると離席となるようにプログラムを実装してみよう．
     if any(value >= 30 for value in sensor_values):
         current_status = 1
-    # model = pickle.load(open("../models/knn_model.pkl", "rb"))
-    # current_status = knn.predict(sensor_values)
-
+    # Step3: 機械学習を使って状態を判断してみましょう．
+    model = pickle.load(open("../models/model.pkl", "rb"))
+    current_status = model.predict([sensor_values])[0]
+    # Step4: 過去の状態を利用して，一時離席を判断できるようにしよう．
+    """
     if current_status != 1:
         if past_status == 0:
             current_status = 0
@@ -32,6 +37,7 @@ def get_status(current_time, past_time, past_status, sensor_values):
                 current_status = 0
             else:
                 current_status = 2
+                """
 
     # 状態が変わったら，その時刻を保存しておく．
     state_changed_time = current_time if current_status != past_status else past_time

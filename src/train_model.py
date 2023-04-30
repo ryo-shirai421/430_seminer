@@ -17,7 +17,6 @@ def train_model():
     y = np.array([0] * len(zeros) + [1] * len(ones))
     # 機械学習モデルの定義
     model = KNeighborsClassifier(n_neighbors=2)
-    # model = tree.DecisionTreeClassifier()
     # モデルの学習
     model.fit(X, y)
     # 学習済みのモデルを保存

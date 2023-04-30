@@ -1,4 +1,5 @@
 import datetime
+import pickle
 
 
 def get_status(current_time, past_time, past_status, sensor_values):
@@ -18,10 +19,8 @@ def get_status(current_time, past_time, past_status, sensor_values):
     """
     # Step1: 現在のステータスが変わらない事を確認しよう．
     # Step2: 温度が上がると在席，下がると離席となるようにプログラムを実装してみよう．
-    # Step3: 過去の状態を利用して，一時離席を判断できるようにしよう．
-    # Advance1: 在席と離席の判断を機械学習モデルにやらせてみよう．
-    # Advance2: 決定木モデルで予測してみよう．
-    # Advance3: 決定木がどのように判断しているかを見てみよう．(sandbox.ipynbで行う)
+    # Step3: 機械学習を使って状態を判断してみましょう．
+    # Step4: 過去の状態を利用して，一時離席を判断できるようにしよう．
 
     # ------------------------------- ここから -----------------------------------
     current_status = 1
